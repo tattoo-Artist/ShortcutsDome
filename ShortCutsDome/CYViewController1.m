@@ -19,7 +19,7 @@
     [super viewDidLoad];
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeSystem];
     btn2.frame = CGRectMake(100, 300, 100, 30);
-    [btn2 setTitle:@"去提现" forState:UIControlStateNormal];
+    [btn2 setTitle:@"去提现界面" forState:UIControlStateNormal];
     [btn2 addTarget:self action:@selector(gotoFinishAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn2];
     
@@ -27,6 +27,7 @@
 
 - (void)gotoFinishAction{
     CYSiriFinishController *siriVC = [[CYSiriFinishController alloc] initWithNibName:@"CYSiriFinishController" bundle:nil];
+    siriVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:siriVC animated:YES];
     
 }

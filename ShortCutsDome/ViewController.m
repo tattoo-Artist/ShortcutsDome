@@ -27,7 +27,7 @@
     
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeSystem];
     btn2.frame = CGRectMake(100, 300, 100, 30);
-    [btn2 setTitle:@"按钮2" forState:UIControlStateNormal];
+    [btn2 setTitle:@"设置语音捷径" forState:UIControlStateNormal];
     [btn2 addTarget:self action:@selector(gotoAddCustomVoiceShortcutView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn2];
  
